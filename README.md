@@ -3,6 +3,8 @@ An in-app-billing extension to monetize your app products using google play stor
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/GooglePlayBilling.jpg"/>
 
+**Reminder:** Starting on August 2, 2022, all new apps must use Billing Library version 4 or newer. By November 1, 2022, all updates to existing apps must use Billing Library version 4 or newer. [Learn more](https://developer.android.com/google/play/billing/deprecation-faq).
+
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/aix.png"/>
 
 ## Start Connection
