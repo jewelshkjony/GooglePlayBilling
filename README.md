@@ -84,6 +84,7 @@ Returns the most recent purchase made by the user for each product, even if that
 
 ## Example blocks
 This is very simple example blocks for using this extension.
+
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/example-blocks.png"/>
 
 ## Extension specifications:
