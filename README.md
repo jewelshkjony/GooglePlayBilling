@@ -82,6 +82,10 @@ Returns the most recent purchase made by the user for each product, even if that
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/query-purchase-history.png"/>
 
+## Example blocks
+This is very simple example blocks for using this extension.
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/example-blocks.png"/>
+
 ## Extension specifications:
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/download.png"/> <a href="https://t.me/jewelshkjony/">com.jewel.googleplaybilling</a>(163 KB) \
 <b>Version:</b> 5.0.0\
