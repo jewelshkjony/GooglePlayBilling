@@ -1,7 +1,7 @@
 # GooglePlayBilling - InAppBilling Extension
 An in-app-billing extension to monetize your app products using google play store billing library 5.0.0.
 
-<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/GooglePlayBilling.jpg"/>
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/thumbnail.png"/>
 
 **Reminder:** Starting on August 2, 2022, all new apps must use Billing Library version 4 or newer. By November 1, 2022, all updates to existing apps must use Billing Library version 4 or newer. [Learn more](https://developer.android.com/google/play/billing/deprecation-faq).
 
@@ -58,6 +58,8 @@ If feature is not supported then return false.
 If you've enabled in-app messaging, Google Play will show users messaging during grace period and account hold once per day and provide them an opportunity to fix their payment without leaving the app. We recommend that you call this API whenever the user opens the app to determine whether the message should be shown. If the user successfully recovered their subscription, you will receive purchase token. You should then use this purchase token to call the Google Play Developer API and refresh the subscription status in your app.
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/show-in-app-message.png"/>
+
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/in-app-message-demo.jpg"/>
 
 <li> InAppMessageResponse: The subscription status changed. For example, a subscription has been recovered from a suspend state. Developers should expect the purchase token to be returned with this response code and use the purchase token with the Google Play Developer API.
 
