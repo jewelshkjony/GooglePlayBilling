@@ -103,6 +103,10 @@ Returns the most recent purchase made by the user for each product, even if that
 
 https://user-images.githubusercontent.com/75406851/186835232-ceb0fd95-d7da-4cb9-aa93-731252f89602.mp4
 
+## Demo Application
+
+<a href="https://play.google.com/store/apps/details?id=com.jewelshkjony.pay2me">Pay2Me - In App Billing 5.0.0</a>
+
 <details>
 <summary>Example blocks</summary>
 
