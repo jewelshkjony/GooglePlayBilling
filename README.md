@@ -107,6 +107,10 @@ https://user-images.githubusercontent.com/75406851/186835232-ceb0fd95-d7da-4cb9-
 
 https://user-images.githubusercontent.com/75406851/188348269-0fda606a-93b7-4633-bcca-55a933393561.mp4
 
+## Purchases Statements
+
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/Purchases-history.jpeg"/>
+
 ## Demo Application
 
 <a href="https://play.google.com/store/apps/details?id=com.jewelshkjony.pay2me">Pay2Me - In App Billing 5.0.0</a>
@@ -134,7 +138,9 @@ This is very simple example blocks for using this extension.
 
 <a href="https://t.me/jewelshkjony">Telegram</a> | <a href="https://wa.me/8801775668913">WhatsApp</a> | <a href="https://fb.com/jewelshkjony">Facebook</a> | <a href="https://m.me/jewelshkjony">Messenger</a> | <a href="https://m.youtube.com/c/JewelShikderJony">Youtube</a>
 
-## Global Payment Method
+<details>
+<summary>Global Payment Method</summary>
+<br>
 <a href="https://www.xoom.com/bangladesh/send-money">Xoom</a> | <a href="https://wise.com/">TansferWise (Wise)</a>
 
 ### Bangladeshi Payment Method
@@ -146,3 +152,4 @@ Use this phone number to send money.
 ````
 
 Remember accounts are personal, so you've to use send money option.
+</details>
