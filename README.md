@@ -99,9 +99,13 @@ Returns the most recent purchase made by the user for each product, even if that
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/query-purchase-history.png"/>
 
-## Demo Video
+## Test Purchasing Video
 
 https://user-images.githubusercontent.com/75406851/186835232-ceb0fd95-d7da-4cb9-aa93-731252f89602.mp4
+
+## Live / Real Purchasing Video
+
+https://user-images.githubusercontent.com/75406851/188348269-0fda606a-93b7-4633-bcca-55a933393561.mp4
 
 ## Demo Application
 
