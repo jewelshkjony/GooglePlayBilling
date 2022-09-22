@@ -72,6 +72,12 @@ Performs a network query the details of products available for sale in your app.
 Performs a network query the details of products available for sale in your app. Set productIds and productTypes as list. Watch demo block for better understanding.
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/get-mutliple-product-details.png"/>
+  
+## Get Price
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/get-price.png"/>
+  
+## Get Offer Token
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/get-offer-token.png"/>
 
 ## Launch Purchase Flow
 Initiates the billing flow for an in-app purchase or subscription.
@@ -118,6 +124,8 @@ https://user-images.githubusercontent.com/75406851/188348269-0fda606a-93b7-4633-
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/Purchases-history.jpeg"/>
 
+ <br>
+  
 <details>
 <summary>Example blocks</summary>
 
