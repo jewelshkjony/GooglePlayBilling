@@ -61,20 +61,27 @@ If you've enabled in-app messaging, Google Play will show users messaging during
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/in-app-message-demo.jpg"/>
 
-<li> InAppMessageResponse: The subscription status changed. For example, a subscription has been recovered from a suspend state. Developers should expect the purchase token to be returned with this response code and use the purchase token with the Google Play Developer API.
+<li> <b>InAppMessageResponse:</b> The subscription status changed. For example, a subscription has been recovered from a suspend state. Developers should expect the purchase token to be returned with this response code and use the purchase token with the Google Play Developer API.
 
-## Query Product Details
+## Get Product Details
+Performs a network query the details of products available for sale in your app. Watch demo block for better understanding.
+
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/get-product-details.png"/>
+
+## Get Multiple Product Details
 Performs a network query the details of products available for sale in your app. Set productIds and productTypes as list. Watch demo block for better understanding.
 
-<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/query-products-details.png"/>
-
-## Get Product Information
-<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/get-product-information.png"/>
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/get-mutliple-product-details.png"/>
 
 ## Launch Purchase Flow
 Initiates the billing flow for an in-app purchase or subscription.
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/launch-billing-flow.png"/>
+
+## Launch Purchase Flow With
+Initiates the billing flow for an in-app purchase or subscription.
+
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/launch-billing-flow-with.png"/>
 
 ## Get Purchase Information
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/get-purchase-details.png"/>
@@ -94,10 +101,10 @@ Fetch for a user's subscription purchases. Returns only active subscriptions and
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/query-purchases.png"/>
 
-## Query Purchase History
+## Get Purchase History
 Returns the most recent purchase made by the user for each product, even if that purchase is expired, canceled, or consumed.
 
-<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/query-purchase-history.png"/>
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/get-purchases-history.png"/>
 
 ## Test Purchasing Video
 
@@ -111,16 +118,16 @@ https://user-images.githubusercontent.com/75406851/188348269-0fda606a-93b7-4633-
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/Purchases-history.jpeg"/>
 
-## Demo Application
-
-<a href="https://play.google.com/store/apps/details?id=com.jewelshkjony.pay2me">Pay2Me - In App Billing 5.0.0</a>
-
 <details>
 <summary>Example blocks</summary>
 
 This is very simple example blocks for using this extension.
 
-<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/demo-blocks.png"/>
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/single-in-app-demo.png"/>
+
+Getting multiple products in single request.
+
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/multiple-in-app-demo.png"/>
 </details>
 
 ## More Extensions
@@ -128,10 +135,11 @@ This is very simple example blocks for using this extension.
 <a href="https://github.com/jewelshkjony?tab=repositories">See more extensions</a>
 
 ## Extension specifications:
-<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/download.png"/> <a href="https://t.me/jewelshkjony/">com.jewel.googleplaybilling.aix</a> (198 KB) \
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/download.png"/> <a href="https://t.me/jewelshkjony/">com.jewel.googleplaybilling.aix</a> (170 KB) \
 <b>Price:</b> $12 USD\
 <b>SDK Version:</b> 5.0.0\
-<b>Last amendment:</b> 26 August 2022\
+<b>Demo Apk:</b> <a href="https://play.google.com/store/apps/details?id=com.jewelshkjony.pay2me">Pay2Me</a> \
+<b>Last amendment:</b> 22 September 2022\
 <b>Supported builder:</b> <a href="https://www.kodular.io/">Kodular</a>, <a href="https://niotron.com/">Niotron</a>, <a href="https://appzard.com/">AppZard</a>, <a href="https://androidbuilder.in/">AndroidBuilder</a>, <a href="http://ai2.appinventor.mit.edu/">App Inventor</a> and it's other distributions.
 
 ## 📫 How to reach me ↓
