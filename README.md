@@ -79,15 +79,22 @@ Performs a network query the details of products available for sale in your app.
 ## Get Offer Token
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/get-offer-token.png"/>
 
-## Launch Purchase Flow
+## Launch Billing Flow
 Initiates the billing flow for an in-app purchase or subscription.
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/launch-billing-flow.png"/>
 
-## Launch Purchase Flow With
+## Launch Billing Flow With
 Initiates the billing flow for an in-app purchase or subscription.
 
-<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/launch-billing-flow-with.png"/>
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/launch-billing-flow-with.png"/>.
+
+## Launch Multiple Billing Flow
+Initiates the billing flow for bundle of in-app purchase or subscription.
+
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/launch-multiple-billing-flow.png"/>
+
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/Bundle%20Billing%20Flow%20Demo.jpg"/>
 
 ## Get Purchase Information
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/get-purchase-details.png"/>
@@ -112,30 +119,47 @@ Returns the most recent purchase made by the user for each product, even if that
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/get-purchases-history.png"/>
 
-## Test Purchasing Video
+<br>
+<br>
 
+<details>
+<summary><b>Testing & Live Videos</b></summary>
+
+## Test Purchasing Video
 https://user-images.githubusercontent.com/75406851/186835232-ceb0fd95-d7da-4cb9-aa93-731252f89602.mp4
 
-## Live / Real Purchasing Video
+<br>
 
+## Live / Real Purchasing Video
 https://user-images.githubusercontent.com/75406851/188348269-0fda606a-93b7-4633-bcca-55a933393561.mp4
+
+<br>
 
 ## Purchases Statements
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/Purchases-history.jpeg"/>
+</details>
 
- <br>
-  
 <details>
-<summary>Example blocks</summary>
+<summary><b>Example blocks</b></summary>
 
 This is very simple example blocks for using this extension.
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/single-in-app-demo.png"/>
 
+<br>
+<br>
+
 Getting multiple products in single request.
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/multiple-in-app-demo.png"/>
+
+<br>
+<br>
+
+Purchasing bundle of product using GetMultipleProductDetails and LaunchMultipleBillingFlow.
+
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/blob/main/images/multiple-billing-flow-demo.png"/>
 </details>
 
 ## More Extensions
@@ -143,11 +167,11 @@ Getting multiple products in single request.
 <a href="https://github.com/jewelshkjony?tab=repositories">See more extensions</a>
 
 ## Extension specifications:
-<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/download.png"/> <a href="https://t.me/jewelshkjony/">com.jewel.googleplaybilling.aix</a> (170 KB) \
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/download.png"/> <a href="https://t.me/jewelshkjony/">com.jewel.googleplaybilling.aix</a> (173 KB) \
 <b>Price:</b> $12 USD\
 <b>SDK Version:</b> 5.0.0\
 <b>Demo Apk:</b> <a href="https://play.google.com/store/apps/details?id=com.jewelshkjony.pay2me">Pay2Me</a> \
-<b>Last amendment:</b> 22 September 2022\
+<b>Last amendment:</b> 23 September 2022\
 <b>Supported builder:</b> <a href="https://www.kodular.io/">Kodular</a>, <a href="https://niotron.com/">Niotron</a>, <a href="https://appzard.com/">AppZard</a>, <a href="https://androidbuilder.in/">AndroidBuilder</a>, <a href="http://ai2.appinventor.mit.edu/">App Inventor</a> and it's other distributions.
 
 ## 📫 How to reach me ↓
