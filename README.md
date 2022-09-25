@@ -71,7 +71,7 @@ Performs a network query the details of products available for sale in your app.
 ## Get Multiple Product Details
 Performs a network query the details of products available for sale in your app. Set productIds and productTypes as list. Watch demo block for better understanding.
 
-<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/get-mutliple-product-details.png"/>
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/get-multiple-product-details.png"/>
   
 ## Get Price
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/get-price.png"/>
@@ -89,10 +89,10 @@ Initiates the billing flow for an in-app purchase or subscription.
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/launch-billing-flow-with.png"/>.
 
-## Launch Multiple Billing Flow
+## Launch Bundle Billing Flow
 Initiates the billing flow for bundle of in-app purchase or subscription.
 
-<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/launch-multiple-billing-flow.png"/>
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/launch-bundle-billing-flow.png"/>
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/Bundle%20Billing%20Flow%20Demo.jpg"/>
 
@@ -104,15 +104,30 @@ For consumables, this method fulfills the acknowledgement requirement and indica
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/consume.png"/>
 
+## Consume With
+For consumables, this method fulfills the acknowledgement requirement and indicates that your app has granted entitlement to the user. This method also enables your app to make the one-time product available for purchase again. Use purchase token to consume the purchase.
+
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/consume-with.png"/>
+
 ## Acknowledge
-To acknowledge non-consumable purchases, use this function.
+To acknowledge non-consumable purchases, use this function. Use purchase token to acknowledge the purchase.
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/acknowledge.png"/>
+
+## Acknowledge With
+To acknowledge non-consumable purchases, use this function.
+
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/acknowledge-with.png"/>
 
 ## Query Purchases
 Fetch for a user's subscription purchases. Returns only active subscriptions and non-consumed one-time purchases.
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/query-purchases.png"/>
+
+## Is Purchased
+Get purchases list by calling QueryPurchases function and set here. Now you can check that product is purchased by user or not by product id. If user purchased the product then it will return true, otherwise false.
+
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/is-purchased.png"/> 
 
 ## Get Purchase History
 Returns the most recent purchase made by the user for each product, even if that purchase is expired, canceled, or consumed.
