@@ -35,6 +35,9 @@ This event will be triggered when the extension got any error while doing any bi
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/billing-service-error.png"/>
 
+<li> <b>function Name</b> → It’s return the name of function which got error.
+<li> <b>error</b> → It’s return the error message as string.
+
 ## End Connection
 Closes the connection and releases all held resources such as service connections.
 
@@ -57,82 +60,184 @@ If feature is not supported then return false.
 ## Show In App Messages
 If you've enabled in-app messaging, Google Play will show users messaging during grace period and account hold once per day and provide them an opportunity to fix their payment without leaving the app. We recommend that you call this API whenever the user opens the app to determine whether the message should be shown. If the user successfully recovered their subscription, you will receive purchase token. You should then use this purchase token to call the Google Play Developer API and refresh the subscription status in your app.
 
-<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/show-in-app-message.png"/>
-
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/in-app-message-demo.jpg"/>
 
-<li> <b>InAppMessageResponse:</b> The subscription status changed. For example, a subscription has been recovered from a suspend state. Developers should expect the purchase token to be returned with this response code and use the purchase token with the Google Play Developer API.
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/show-in-app-message.png"/>
+
+The subscription status changed. For example, a subscription has been recovered from a suspend state. Developers should expect the purchase token to be returned with this response code and use the purchase token with the Google Play Developer API.
+
+<li> <b>purchaseToken</b> → It’s return the purchase token as string.
+<li> <b>response Code</b> → It’s return the response code as integer.
 
 ## Get Product Details
 Performs a network query the details of products available for sale in your app. Watch demo block for better understanding.
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/get-product-details.png"/>
 
+<li> <b>name</b> → It’s return the name of product as string.
+<li> <b>title</b> → It’s return the title of product as string.
+<li> <b>product Id</b> → It’s return the given product id string.
+<li> <b>productType</b> → It’s return the type of product string.
+<li> <b>description</b> → It’s return the description of product as string.
+<li> <b>productDetails</b> → It’s return the object of ProductDetails.
+<li> <b>response Code</b> → It’s return the response code as integer.
+<li> <b>reason</b> → It’s return the reason for error as string.
+<li> <b>message</b> → It’s return the details error message as string.
+
 ## Get Multiple Product Details
 Performs a network query the details of products available for sale in your app. Set productIds and productTypes as list. Watch demo block for better understanding.
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/get-multiple-product-details.png"/>
+
+<li> <b>names</b> → It’s return the names of products as list of string.
+<li> <b>titles</b> → It’s return the titles of product as list of string.
+<li> <b>productIds</b> → It’s return the given products ids list of string.
+<li> <b>productTypes</b> → It’s return the types of products list of string.
+<li> <b>descriptions</b> → It’s return the descriptions of products as list of string.
+<li> <b>productDetailsList</b> → It’s return the objects of ProductDetails as list.
+<li> <b>response Code</b> → It’s return the response code as integer.
+<li> <b>reason</b> → It’s return the reason for error as string.
+<li> <b>message</b> → It’s return the details error message as string.
   
 ## Get Price
+You can get <b>productDetails</b> from <b>GotProductDetails</b> event.
+
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/get-price.png"/>
   
 ## Get Offer Token
+You can get <b>productDetails</b> from <b>GotProductDetails</b> event.
+
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/get-offer-token.png"/>
 
 ## Launch Billing Flow
-Initiates the billing flow for an in-app purchase or subscription.
+Initiates the billing flow for an in-app purchase or subscription. You can get <b>productDetails</b> from <b>GotProductDetails</b> event.
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/launch-billing-flow.png"/>
 
+<li> <b>purchase</b> → It’s return the object of Purchase. Use this purchase object to Consume or Acknowledge this purchase.
+<li> <b>response Code</b> → It’s return the response code as integer.
+<li> <b>reason</b> → It’s return the reason for error as string.
+<li> <b>message</b> → It’s return the details error message as string.
+
 ## Launch Billing Flow With
 Initiates the billing flow for an in-app purchase or subscription.
+You can get <b>productDetails</b> from <b>GotProductDetails</b> event.
 
-<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/launch-billing-flow-with.png"/>.
+<b>isOfferPersonalized:</b> The Google Play purchase screen indicating that the price was customized for the user.
+
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/launch-billing-flow-with.png"/>
+
+<li> <b>purchase</b> → It’s return the object of Purchase. Use this purchase object to Consume or Acknowledge this purchase.
+<li> <b>response Code</b> → It’s return the response code as integer.
+<li> <b>reason</b> → It’s return the reason for error as string.
+<li> <b>message</b> → It’s return the details error message as string.
 
 ## Launch Bundle Billing Flow
 Initiates the billing flow for bundle of in-app purchase or subscription.
+You can get <b>productDetailsList</b> from <b>GotMultipleProductDetails</b> event.
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/launch-bundle-billing-flow.png"/>
 
+<li> <b>purchase</b> → It’s return the object of Purchase. Use this purchase object to Consume or Acknowledge this purchase.
+<li> <b>response Code</b> → It’s return the response code as integer.
+<li> <b>reason</b> → It’s return the reason for error as string.
+<li> <b>message</b> → It’s return the details error message as string.
+
+<br>
+
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/Bundle%20Billing%20Flow%20Demo.jpg"/>
 
-## Get Purchase Information
+## Get Purchase Details
+Get <b>purchase</b> object from <b>GotPurchase</b> event.
+
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/get-purchase-details.png"/>
+
+<li> <b>orderId</b> → It’s return the order id from the purchase as string.
+<li> <b>isAcknowledge</b> → It’s return true if the purchase is acknowledged, otherwise false.
+<li> <b>isAutoRenewing</b> → It’s return true if product is auto renewable.
+<li> <b>purchaseTime</b> → It’s return the time of purchase as long.
+<li> <b>purchaseToken</b> → It’s return the purchase token as string.
+<li> <b>json</b> → It’s return the json of the purchase object as string.
 
 ## Consume
 For consumables, this method fulfills the acknowledgement requirement and indicates that your app has granted entitlement to the user. This method also enables your app to make the one-time product available for purchase again.
+Get <b>purchase</b> object from <b>GotPurchase</b> event.
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/consume.png"/>
 
+<li> <b>token</b> → It’s return the purchase token as string.
+<li> <b>response Code</b> → It’s return the response code as integer.
+<li> <b>reason</b> → It’s return the reason for error as string.
+<li> <b>message</b> → It’s return the details error message as string.
+
 ## Consume With
-For consumables, this method fulfills the acknowledgement requirement and indicates that your app has granted entitlement to the user. This method also enables your app to make the one-time product available for purchase again. Use purchase token to consume the purchase.
+For consumables, this method fulfills the acknowledgement requirement and indicates that your app has granted entitlement to the user. This method also enables your app to make the one-time product available for purchase again. Use purchase token to consume the purchase. Get <b>purchaseToken</b> from <b>GotPurchaseDetails</b> event.
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/consume-with.png"/>
 
+<li> <b>token</b> → It’s return the purchase token as string.
+<li> <b>response Code</b> → It’s return the response code as integer.
+<li> <b>reason</b> → It’s return the reason for error as string.
+<li> <b>message</b> → It’s return the details error message as string.
+
 ## Acknowledge
-To acknowledge non-consumable purchases, use this function. Use purchase token to acknowledge the purchase.
+To acknowledge non-consumable purchases, use this function.
+Get <b>purchase</b> object from <b>GotPurchase</b> event.
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/acknowledge.png"/>
 
+<li> <b>token</b> → It’s return the purchase token as string.
+<li> <b>response Code</b> → It’s return the response code as integer.
+<li> <b>reason</b> → It’s return the reason for error as string.
+<li> <b>message</b> → It’s return the details error message as string.
+
 ## Acknowledge With
-To acknowledge non-consumable purchases, use this function.
+To acknowledge non-consumable purchases, use this function. Use purchase token to acknowledge the purchase. Get <b>purchaseToken</b> from <b>GotPurchaseDetails</b> event.
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/acknowledge-with.png"/>
 
+<li> <b>token</b> → It’s return the purchase token as string.
+<li> <b>response Code</b> → It’s return the response code as integer.
+<li> <b>reason</b> → It’s return the reason for error as string.
+<li> <b>message</b> → It’s return the details error message as string.
+
 ## Query Purchases
-Fetch for a user's subscription purchases. Returns only active subscriptions and non-consumed one-time purchases.
+Fetch for a user’s subscription purchases. Returns only active subscriptions and non-consumed one-time purchases.
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/query-purchases.png"/>
 
 ## Is Purchased
-Get purchases list by calling QueryPurchases function and set here. Now you can check that product is purchased by user or not by product id. If user purchased the product then it will return true, otherwise false.
+Get <b>purchasesList</b> from <b>QueryPurchasesSuccess</b> event.
+Now you can check that product is purchased by user or not by product id. If user purchased the product then it will return true, otherwise false.
 
-<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/is-purchased.png"/> 
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/is-purchased.png"/>
+
+<li> <b>productIds</b> → It’s return products ids as list of string.
+<li> <b>purchasesState</b> → It’s return purchases states as list of integer. (0 == UNSPECIFIED_STATE, 1 == PURCHASED and 2 == PENDING).
+<li> <b>purchasesToken</b> → It’s return purchases token as list of string.
+<li> <b>orderIds</b> → It’s return order ids as list of string.
+<li> <b>purchasesList</b> → It’s return the purchase object as list.
+<li> <b>size</b> → It’s return the size of list as integer.
+<li> <b>response Code</b> → It’s return the response code as integer.
+<li> <b>reason</b> → It’s return the reason for error as string.
+<li> <b>message</b> → It’s return the details error message as string.
 
 ## Get Purchase History
 Returns the most recent purchase made by the user for each product, even if that purchase is expired, canceled, or consumed.
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/get-purchases-history.png"/>
+
+<li> <b>quantities</b> → It’s return quantities of purchases of product as list of integer.
+<li> <b>purchaseTimes</b> → It’s return purchase time as list of long.
+<li> <b>developerPayloads</b> → It’s return developer payloads as list of string.
+<li> <b>originalJsons</b> → It’s return json of purchase object as list of string.
+<li> <b>purchaseTokens</b> → It’s return purchases token as list of string.
+<li> <b>signatures</b> → It’s return signatures as list of string.
+<li> <b>productIds</b> → It’s return products ids as list of string.
+<li> <b>size</b> → It’s return the size of list as integer.
+<li> <b>response Code</b> → It’s return the response code as integer.
+<li> <b>reason</b> → It’s return the reason for error as string.
+<li> <b>message</b> → It’s return the details error message as string.
 
 <br>
 <br>
@@ -182,11 +287,11 @@ Purchasing bundle of product using GetMultipleProductDetails and LaunchMultipleB
 <a href="https://github.com/jewelshkjony?tab=repositories">See more extensions</a>
 
 ## Extension specifications:
-<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/download.png"/> <a href="https://t.me/jewelshkjony/">com.jewel.googleplaybilling.aix</a> (173 KB) \
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/download.png"/> <a href="https://t.me/jewelshkjony/">com.jewel.googleplaybilling.aix</a> (192 KB) \
 <b>Price:</b> $12 USD\
 <b>SDK Version:</b> 5.0.0\
 <b>Demo Apk:</b> <a href="https://play.google.com/store/apps/details?id=com.jewelshkjony.pay2me">Pay2Me</a> \
-<b>Last amendment:</b> 23 September 2022\
+<b>Last amendment:</b> 26 September 2022\
 <b>Supported builder:</b> <a href="https://www.kodular.io/">Kodular</a>, <a href="https://niotron.com/">Niotron</a>, <a href="https://appzard.com/">AppZard</a>, <a href="https://androidbuilder.in/">AndroidBuilder</a>, <a href="http://ai2.appinventor.mit.edu/">App Inventor</a> and it's other distributions.
 
 ## 📫 How to reach me ↓
