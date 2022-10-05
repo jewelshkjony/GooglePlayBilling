@@ -99,11 +99,6 @@ Performs a network query the details of products available for sale in your app.
 <li> <b>reason</b> → It’s return the reason for error as string.
 <li> <b>message</b> → It’s return the details error message as string.
   
-## Get Price
-You can get <b>productDetails</b> from <b>GotProductDetails</b> event.
-
-<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/get-price.png"/>
-  
 ## Get Offer Token
 You can get <b>productDetails</b> from <b>GotProductDetails</b> event.
 
