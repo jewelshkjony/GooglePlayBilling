@@ -79,6 +79,7 @@ Performs a network query the details of products available for sale in your app.
 <li> <b>product Id</b> → It’s return the given product id string.
 <li> <b>productType</b> → It’s return the type of product string.
 <li> <b>description</b> → It’s return the description of product as string.
+<li> <b>price</b> → It’s return the formatted price of product as string.
 <li> <b>productDetails</b> → It’s return the object of ProductDetails.
 <li> <b>response Code</b> → It’s return the response code as integer.
 <li> <b>reason</b> → It’s return the reason for error as string.
@@ -94,6 +95,7 @@ Performs a network query the details of products available for sale in your app.
 <li> <b>productIds</b> → It’s return the given products ids list of string.
 <li> <b>productTypes</b> → It’s return the types of products list of string.
 <li> <b>descriptions</b> → It’s return the descriptions of products as list of string.
+<li> <b>prices</b> → It’s return the formatted price of product as list of string.
 <li> <b>productDetailsList</b> → It’s return the objects of ProductDetails as list.
 <li> <b>response Code</b> → It’s return the response code as integer.
 <li> <b>reason</b> → It’s return the reason for error as string.
@@ -282,11 +284,11 @@ Purchasing bundle of product using GetMultipleProductDetails and LaunchMultipleB
 <a href="https://github.com/jewelshkjony?tab=repositories">See more extensions</a>
 
 ## Extension specifications:
-<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/download.png"/> <a href="https://t.me/jewelshkjony/">com.jewel.googleplaybilling.aix</a> (171 KB) \
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/download.png"/> <a href="https://t.me/jewelshkjony/">com.jewel.googleplaybilling.aix</a> (172 KB) \
 <b>Price:</b> $12 USD\
 <b>SDK Version:</b> 5.0.0\
 <b>Demo Apk:</b> <a href="https://play.google.com/store/apps/details?id=com.jewelshkjony.pay2me">Pay2Me</a> \
-<b>Last amendment:</b> 27 September 2022\
+<b>Last amendment:</b> 05 October 2022\
 <b>Supported builder:</b> <a href="https://www.kodular.io/">Kodular</a>, <a href="https://niotron.com/">Niotron</a>, <a href="https://appzard.com/">AppZard</a>, <a href="https://androidbuilder.in/">AndroidBuilder</a>, <a href="http://ai2.appinventor.mit.edu/">App Inventor</a> and it's other distributions.
 
 ## 📫 How to reach me ↓
@@ -295,6 +297,6 @@ Purchasing bundle of product using GetMultipleProductDetails and LaunchMultipleB
 
 ## 💲 Payment Methods ↓
 
-❏ <a href="https://www.xoom.com/bangladesh/send-money">Xoom</a> | <a href="https://wise.com/">Wise</a> | <a href="https://play.google.com/store/apps/details?id=com.jewelshkjony.pay2me">Pay2Me</a> (International)
+❏ <a href="https://www.xoom.com/bangladesh/send-money" target="_blank">Xoom</a> | <a href="https://wise.com/?sourceCurrency=USD&targetCurrency=BDT&sourceAmount=13" target="_blank">Wise</a> | <a href="https://www.binance.me/en/activity/referral-entry/CPA?fromActivityPage=true&ref=CPA_0068YL77KV" target="_blank">Binance</a> | <a href="https://play.google.com/store/apps/details?id=com.jewelshkjony.pay2me">Pay2Me</a> (Global)
 
 ❏ <a href="https://bka.sh/next?c=signup&uuid=C1CC9JVT1">bkash</a> | <a href="https://play.google.com/store/apps/details?id=com.konasl.nagad">Nagad</a> | <a href="https://play.google.com/store/apps/details?id=com.dbbl.mbs.apps.main">Rocket</a> (Bangladesh)
