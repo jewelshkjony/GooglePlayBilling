@@ -1,5 +1,5 @@
 # GooglePlayBilling - InAppBilling Extension
-An in-app-billing extension to monetize your app products using google play store billing library 5.0.0.
+An in-app-billing extension to monetize your app products using google play store billing library 5.1.0.
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/thumbnail.png"/>
 
@@ -284,11 +284,11 @@ Purchasing bundle of product using GetMultipleProductDetails and LaunchMultipleB
 <a href="https://github.com/jewelshkjony?tab=repositories">See more extensions</a>
 
 ## Extension specifications:
-<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/download.png"/> <a href="https://t.me/jewelshkjony/">com.jewel.googleplaybilling.aix</a> (172 KB) \
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/download.png"/> <a href="https://t.me/jewelshkjony/">com.jewel.googleplaybilling.aix</a> (183 KB) \
 <b>Price:</b> $12 USD\
-<b>SDK Version:</b> 5.0.0\
+<b>SDK Version:</b> 5.1.0\
 <b>Demo Apk:</b> <a href="https://play.google.com/store/apps/details?id=com.jewelshkjony.pay2me">Pay2Me</a> \
-<b>Last amendment:</b> 05 October 2022\
+<b>Last amendment:</b> 17 November 2022\
 <b>Supported builder:</b> <a href="https://www.kodular.io/">Kodular</a>, <a href="https://niotron.com/">Niotron</a>, <a href="https://appzard.com/">AppZard</a>, <a href="https://androidbuilder.in/">AndroidBuilder</a>, <a href="http://ai2.appinventor.mit.edu/">App Inventor</a> and it's other distributions.
 
 ## 📫 How to reach me ↓
