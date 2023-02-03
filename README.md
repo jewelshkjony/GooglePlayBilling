@@ -239,6 +239,10 @@ Returns the most recent purchase made by the user for each product, even if that
 <br>
 <br>
 
+>## Implementation Guide Video **↓**
+
+[![AdmobAds](http://img.youtube.com/vi/F0i_6fgmpJ4/0.jpg)](https://www.youtube.com/watch?v=F0i_6fgmpJ4&list=PLczFHGJFYQrmQZMn4DZvjSbWjMqvEO3OD)
+
 <details>
 <summary><b>Testing & Live Videos</b></summary>
 
