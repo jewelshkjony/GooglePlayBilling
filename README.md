@@ -1,9 +1,9 @@
 # GooglePlayBilling - InAppBilling Extension
-An in-app-billing extension to monetize your app products using google play store billing library 5.2.0.
+An in-app-billing extension to monetize your app products using google play store billing library 6.0.0.
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/thumbnail.png"/>
 
-**Reminder:** Starting on August 2, 2022, all new apps must use Billing Library version 4 or newer. By November 1, 2022, all updates to existing apps must use Billing Library version 4 or newer. [Learn more](https://developer.android.com/google/play/billing/deprecation-faq).
+**Reminder:** Starting on August 2, 2023, all new apps must use Billing Library version 5 or newer. By November 1, 2022, all updates to existing apps must use Billing Library version 5 or newer. [Learn more](https://developer.android.com/google/play/billing/deprecation-faq).
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/aix.png"/>
 
@@ -143,6 +143,21 @@ You can get <b>productDetailsList</b> from <b>GotMultipleProductDetails</b> even
 <br>
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/Bundle%20Billing%20Flow%20Demo.jpg"/>
+  
+## 🔁 Launch Subscription Update Flow
+Update purchase flow for in-app subscription product to update it’s billing cycle or launch for price change. You need to set the old purchase token to update the product with new prices. You can store the old purchase token locally or into your own server for later use.
+  
+![image](https://github.com/jewelshkjony/GooglePlayBilling/assets/75406851/0377c963-f416-4f23-a92f-132bd11dfaac)
+
+## 💸 User Selected Alternative Billing
+  
+![image](https://github.com/jewelshkjony/GooglePlayBilling/assets/75406851/62ab76d6-9e29-4242-b545-2f83a8a066ce)
+
+This event will be triggered when South Korean user select alternative billing option during payment time.\
+Method to allow users in South Korea to select an alternative billing option.\
+Enables the ability for users to select an alternative billing option during the purchase flow.
+  
+![image](https://github.com/jewelshkjony/GooglePlayBilling/assets/75406851/b57402ff-2b67-4e65-9a5a-355f30ab3a39)
 
 ## Get Purchase Details
 Get <b>purchase</b> object from <b>GotPurchase</b> event.
@@ -239,9 +254,11 @@ Returns the most recent purchase made by the user for each product, even if that
 <br>
 <br>
 
->## Implementation Guide Video **↓**
+## Implementation Guide Video **↓**
 
-[![AdmobAds](http://img.youtube.com/vi/F0i_6fgmpJ4/0.jpg)](https://www.youtube.com/watch?v=F0i_6fgmpJ4&list=PLczFHGJFYQrmQZMn4DZvjSbWjMqvEO3OD)
+[![AdmobAds](http://img.youtube.com/vi/F0i_6fgmpJ4/0.jpg)](https://www.youtube.com/watch?v=F0i_6fgmpJ4&list=PLczFHGJFYQrmQZMn4DZvjSbWjMqvEO3OD&index=1)
+  
+* If you're facing any issues, please submit your issues here → <a href="https://github.com/jewelshkjony/GooglePlayBilling/issues">Submit Issues</a>
 
 <details>
 <summary><b>Testing & Live Videos</b></summary>
@@ -282,17 +299,79 @@ Purchasing bundle of product using GetMultipleProductDetails and LaunchMultipleB
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/blob/main/images/multiple-billing-flow-demo.png"/>
 </details>
+  
+## ➤ Release Notes ↷
+
+<details>
+<summary><b>6.0.0</b></summary>
+
+●  Replaced `ProrationMode` by `ReplacementMode`.
+
+●  Removed order ID for `PENDING` purchases.\
+<small>(Previously, the order ID would always be created even if the purchase was pending. Starting with version 6.0.0, an order ID will not be created for pending purchases, and for these purchases, the order ID will be populated after the purchase is moved to the `PURCHASED` state.)</small>
+
+●  Added new network error response code.\
+<small>(A new network error response code, `NETWORK_ERROR`, has been added starting with PBL version 6.0.0. This code is returned when an error occurs due to a network connection issue. These network connection errors were previously reported as `SERVICE_UNAVAILABLE`.)</small>
+
+●  Added additional logging.\
+<small>(The Play Billing Library 6 release includes additional logging, which provides insight into API usage (such as success and failure) and service connection issues. This information will be used to improve the performance of the Play Billing Library and provide better support for errors.)</small>
+
+●  Extension size increased 139 KB.
+
+●  To migrate from `V5` to `V6`\
+<small>(I'll charge very small amount for the `MAJOR` update only. MINOR updates will be totally free for all migrated users.)</small>
+</details>
+
+* **
+
+<details>
+<summary><b>5.2.0</b></summary>
+
+●  Extension size increased 149 KB.
+
+●  Added method to allow users in South Korea to select an alternative billing option.
+</details>
+
+* **
+
+<details>
+<summary><b>5.1.0</b></summary>
+
+●  Extension size increased 11 KB.
+
+●  Added `GetOfferTokens` method.
+
+●  Added `GetOfferIds` method.
+
+●  Added `GetBasePlanIds` method.
+
+●  Added `GetOfferTags` method.
+</details>
+
+* **
+
+<details>
+<summary><b>5.0.0</b></summary>
+
+●  Introduced a new model for subscriptions, including new entities that enable you to create multiple offers for a single subscription product.
+
+●  Added `isOfferPersonalized` method for EU personalized pricing disclosure requirements.
+
+●  <del>`LaunchPriceChangeFlow`</del> has been deprecated and will be removed in a future release.
+
+●  Removed <del>`setVrPurchaseFlow`</del>, which was previously used when instantiating a purchase flow. In previous versions, this method redirected the user to complete the purchase on their Android device. Once you remove this method, users will complete the purchase through the standard purchase flow.
+</details>
 
 ## More Extensions
 
 <a href="https://github.com/jewelshkjony?tab=repositories">See more extensions</a>
 
 ## Extension specifications:
-<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/download.png"/> <a href="https://t.me/jewelshkjony/">com.jewel.googleplaybilling.aix</a> (335 KB) \
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/download.png"/> <a href="https://t.me/jewelshkjony/">com.jewel.googleplaybilling.aix</a> (453 KB) \
 <b>Price:</b> $12 USD\
-<b>SDK Version:</b> 5.2.0\
+<b>SDK Version:</b> 6.0.0\
 <b>Demo Apk:</b> <a href="https://play.google.com/store/apps/details?id=com.jewelshkjony.pay2me">Pay2Me</a> \
-<b>Last amendment:</b> 09 April 2023\
+<b>Last amendment:</b> 12 May 2023\
 <b>Supported builder:</b> <a href="https://www.kodular.io/">Kodular</a>, <a href="https://niotron.com/">Niotron</a>, <a href="https://appzard.com/">AppZard</a>, <a href="https://androidbuilder.in/">AndroidBuilder</a>, <a href="http://ai2.appinventor.mit.edu/">App Inventor</a> and it's other distributions.
 
 ## 📫 How to reach me ↓
