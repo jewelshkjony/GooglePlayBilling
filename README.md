@@ -1,5 +1,5 @@
 # GooglePlayBilling - InAppBilling Extension
-An in-app-billing extension to monetize your app products using google play store billing library 6.0.0.
+An in-app-billing extension to monetize your app products using google play store billing library 6.0.1.
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/thumbnail.png"/>
 
@@ -256,7 +256,7 @@ Returns the most recent purchase made by the user for each product, even if that
 
 ## Implementation Guide Video **↓**
 
-[![AdmobAds](http://img.youtube.com/vi/F0i_6fgmpJ4/0.jpg)](https://www.youtube.com/watch?v=F0i_6fgmpJ4&list=PLczFHGJFYQrmQZMn4DZvjSbWjMqvEO3OD&index=1)
+[![AdmobAds](http://img.youtube.com/vi/F0i_6fgmpJ4/0.jpg)](https://www.youtube.com/watch?v=F0i_6fgmpJ4&list=PLczFHGJFYQrmQZMn4DZvjSbWjMqvEO3OD)
   
 * If you're facing any issues, please submit your issues here → <a href="https://github.com/jewelshkjony/GooglePlayBilling/issues">Submit Issues</a>
 
@@ -301,6 +301,14 @@ Purchasing bundle of product using GetMultipleProductDetails and LaunchMultipleB
 </details>
   
 ## ➤ Release Notes ↷
+
+<details>
+<summary><b>6.0.1</b></summary>
+
+●  Update Play Billing Library to be compatible with Android 14.
+</details>
+
+* **
 
 <details>
 <summary><b>6.0.0</b></summary>
@@ -367,11 +375,11 @@ Purchasing bundle of product using GetMultipleProductDetails and LaunchMultipleB
 <a href="https://github.com/jewelshkjony?tab=repositories">See more extensions</a>
 
 ## Extension specifications:
-<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/download.png"/> <a href="https://t.me/jewelshkjony/">com.jewel.googleplaybilling.aix</a> (453 KB) \
+<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/download.png"/> <a href="https://t.me/jewelshkjony/">com.jewel.googleplaybilling.aix</a> (456 KB) \
 <b>Price:</b> $12 USD\
-<b>SDK Version:</b> 6.0.0\
+<b>SDK Version:</b> 6.0.1\
 <b>Demo Apk:</b> <a href="https://play.google.com/store/apps/details?id=com.jewelshkjony.pay2me">Pay2Me</a> \
-<b>Last amendment:</b> 12 May 2023\
+<b>Last amendment:</b> 23 June 2023\
 <b>Supported builder:</b> <a href="https://www.kodular.io/">Kodular</a>, <a href="https://niotron.com/">Niotron</a>, <a href="https://appzard.com/">AppZard</a>, <a href="https://androidbuilder.in/">AndroidBuilder</a>, <a href="http://ai2.appinventor.mit.edu/">App Inventor</a> and it's other distributions.
 
 ## 📫 How to reach me ↓
