@@ -5,21 +5,6 @@ An in-app-billing extension to monetize your app products using google play stor
 
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/aix.png"/>
 
-## Extension Properties
-If <b>AutoConsume</b> enabled, then you don't need to consume manually for one time product. If <b>AutoAcknowledge</b> enabled then you don't need to acknowledge in app subscription product. If <b>AutoConsume</b> disabled and <b>AutoAcknowledge</b> enabled, then one time product will be acknowledged, and user can't but this agian. To make the one-time product available for purchase again, you've to enable <b>AutoConsume</b> or manually consume it.
-
-<b>AutoConsume</b> only target one time product or in app purchase product.
-
-<b>AutoAcknowledge</b> will target both types product if <b>AutoConsume</b> is disabled. If <b>AutoConsume</b> enabled then <b>AutoAcknowledge</b> only target in app subscriptions.
-
-For better use, enable both. (Recommended)
-
-<b>ConsumeSuccess</b> and <b>AcknowledgeSuccess</b> will be triggered after automatically consumed or acknowledged the purchase.
-
-<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/property-1.png"/>
-
-<img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/property-2.png"/>
-
 ## Start Connection
 You must use this function to starts up BillingClient setup process asynchronously.
 
@@ -299,6 +284,19 @@ Purchasing bundle of product using GetMultipleProductDetails and LaunchMultipleB
 </details>
   
 ## ➤ Release Notes ↷
+
+<details>
+<summary><b>6.1.0</b></summary>
+
+● Extension size increased 187 KB.
+
+● Added 4 new functions and events.
+
+● Added 1 new property.
+
+</details>
+
+* **
 
 <details>
 <summary><b>6.0.1</b></summary>
