@@ -381,9 +381,3 @@ Purchasing bundle of product using GetMultipleProductDetails and LaunchMultipleB
 ## 📫 How to reach me ↓
 
 <a href="https://discordapp.com/users/795698765959790632">Discord</a> | <a href="https://t.me/jewelshkjony">Telegram</a> | <a href="https://wa.me/8801775668913">WhatsApp</a> | <a href="https://fb.com/jewelshkjony">Facebook</a> | <a href="https://m.me/jewelshkjony">Messenger</a> | <a href="https://m.youtube.com/c/JewelShikderJony?sub_confirmation=1">Youtube</a>
-
-## 💲 Payment Methods ↓
-
-❏ <a href="https://www.binance.me/en/activity/referral-entry/CPA?fromActivityPage=true&ref=CPA_0068YL77KV" target="_blank">Binance</a> | <a href="https://www.skrill.com/en/">Skrill</a> | <a href="https://wise.com/?sourceCurrency=USD&targetCurrency=BDT&sourceAmount=20" target="_blank">Wise</a> | <a href="https://play.google.com/store/apps/details?id=com.pyypl">Pyypl</a> | <a href="https://www.xoom.com/bangladesh/send-money" target="_blank">Xoom</a> | <a href="https://www.buymeacoffee.com/jewelshkjony/e/203660">Card Payment</a> | <b>PayPal</b> | <b>UPI</b>
-
-❏ <a href="https://bka.sh/next?c=signup&uuid=C1CC9JVT1" target="_blank">bkash</a> | <a href="https://play.google.com/store/apps/details?id=com.konasl.nagad">Nagad</a> | <a href="https://play.google.com/store/apps/details?id=com.dbbl.mbs.apps.main">Rocket</a> (Bangladesh)
