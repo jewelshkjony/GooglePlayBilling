@@ -1,5 +1,5 @@
 # GooglePlayBilling - InAppBilling Extension
-An in-app-billing extension to monetize your app products using google play store billing library 6.1.0.
+An in-app-billing extension to monetize your app products using google play store billing library 7.0.0.
 
 **Reminder:** Starting on August 2, 2023, all new apps must use Billing Library version 5 or newer. By November 1, 2023, all updates to existing apps must use Billing Library version 5 or newer. [Learn more](https://developer.android.com/google/play/billing/deprecation-faq).
 
@@ -373,8 +373,8 @@ Purchasing bundle of product using GetMultipleProductDetails and LaunchMultipleB
 ## Extension specifications:
 <img src="https://github.com/jewelshkjony/GooglePlayBilling/raw/main/images/download.png"/> <a href="https://t.me/jewelshkjony/">com.jewel.googleplaybilling.aix</a> (567 KB) \
 💰 <b>Price:</b> $12 USD\
-⚙️ <b>SDK Version:</b> 6.1.0\
-🌎 <b>Last amendment:</b> 14 January 2024\
+⚙️ <b>SDK Version:</b> 7.0.0\
+🌎 <b>Last amendment:</b> 01 July 2024\
 ⚖️ <b>License:</b> <a href="https://github.com/jewelshkjony/Extensions/blob/main/LICENSE.md#terms-and-conditions-for-the-extension" target="_blank">Terms & Conditions</a> \
 🤝 <b>Supported builder:</b> <a href="https://www.kodular.io/">Kodular</a>, <a href="https://niotron.com/">Niotron</a>, <a href="https://appzard.com/">AppZard</a>, <a href="https://androidbuilder.in/">AndroidBuilder</a>, <a href="http://ai2.appinventor.mit.edu/">App Inventor</a> and it's other distributions.
 
